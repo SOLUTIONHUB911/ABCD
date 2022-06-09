@@ -1,0 +1,25 @@
+.container{
+  min-width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+	height: 170px;
+  padding: 10px;
+	-webkit-transform: skew(-30deg); 
+  -moz-transform: skew(-30deg); 
+  transform: skew(-30deg);
+
+	background-image: linear-gradient(to right, #ffd000, rgba(255,208,0,0.1));
+  display: flex;
+}
+.properties{
+  -webkit-transform: skew(30deg); 
+  -moz-transform: skew(30deg); 
+  transform: skew(30deg);
+}
+.text{
+  -webkit-transform: skew(30deg); 
+  -moz-transform: skew(30deg); 
+  transform: skew(30deg);
+  font-size: 30px;
+  font-weight: 600;
+}
