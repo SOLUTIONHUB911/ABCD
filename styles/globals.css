@@ -1,0 +1,8 @@
+@tailwind base;
+body{
+  background-color: #030303;
+  color: white;
+  font-family: 'Open Sans';
+}
+@tailwind components;
+@tailwind utilities;
