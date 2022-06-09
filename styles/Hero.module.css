@@ -1,25 +1,27 @@
 .container{
-  min-width: 100%;
-  overflow-x: hidden;
-  margin-bottom: 20px;
-	height: 170px;
+  width: 670px;
+  margin-top: 25px;
+	height: 150px;
   padding: 10px;
-	-webkit-transform: skew(-30deg); 
-  -moz-transform: skew(-30deg); 
-  transform: skew(-30deg);
-
+	-webkit-transform: skew(-20deg); 
+  -moz-transform: skew(-20deg); 
+  transform: skew(-20deg);
 	background-image: linear-gradient(to right, #ffd000, rgba(255,208,0,0.1));
   display: flex;
 }
 .properties{
-  -webkit-transform: skew(30deg); 
-  -moz-transform: skew(30deg); 
-  transform: skew(30deg);
+  -webkit-transform: skew(20deg); 
+  -moz-transform: skew(20deg); 
+  transform: skew(20deg);
+  margin-left: 50px;
+  margin-top: 5px;
 }
 .text{
-  -webkit-transform: skew(30deg); 
-  -moz-transform: skew(30deg); 
-  transform: skew(30deg);
-  font-size: 30px;
+  -webkit-transform: skew(20deg); 
+  -moz-transform: skew(20deg); 
+  transform: skew(20deg);
+  font-size: 20px;
   font-weight: 600;
+  margin-left: 50px;
+  margin-top: 27px;
 }
