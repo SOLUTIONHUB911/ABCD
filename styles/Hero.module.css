@@ -25,3 +25,13 @@
   margin-left: 50px;
   margin-top: 27px;
 }
+
+@media only screen and (max-width: 640px) {
+ 
+
+  .text{
+    margin-left: 25px;
+    margin-top: 12px;
+    font-size: 16px;
+  }
+}

@@ -14,9 +14,13 @@ export default function About() {
 		<div>
 			<Navigation />
 			<main>
-				<section className="grid grid-cols-2 ml-[50px] gap-4">
-					<div className="mt-20">
-						<h3 className="text-[#ffd000] font-bold mb-4 text-4xl">About ABCD</h3>
+				<h3 className="lg:ml-[50px] ml-[25px] mt-20 text-[#ffd000] font-bold mb-4 text-4xl">About ABCD</h3>
+				<section className="gid-rows-2 grid lg:grid-cols-2 mx-[25px] lg:ml-[50px] gap-4">
+					<figure className="lg:order-last">
+						<Image src={AboutHero} width={747} height={559} alt="About Hero" />
+					</figure>
+
+					<div>
 						<p className="text-sm leading-10">
 							African Blockchain Centre for Developers is focused on providing a full suite of solutions
 							to help organizations build on different blockchains/Layer 2 technologies by providing
@@ -30,14 +34,11 @@ export default function About() {
 							FAQs
 						</button>
 					</div>
-					<figure>
-						<Image src={AboutHero} width={747} height={559} alt="About Hero" />
-					</figure>
 				</section>
 
 				{/**ABCD JOURNEY */}
-				<section className="grid grid-cols-2 mr-[50px] gap-4 mt-40">
-					<figure className="mt-24">
+				<section className="lg:grid lg:grid-cols-2 mx-[25px] lg:mr-[50px] gap-4 mt-40">
+					<figure className="lg:mt-24">
 						<Image src={ABCDJourney} width={805} height={604} alt="ABCD Journey" />
 					</figure>
 					<div>
@@ -53,8 +54,8 @@ export default function About() {
 				</section>
 
 				{/**Why ABCD */}
-				<h3 className="mx-[74px] mt-20 text-[#ffd000] font-bold mb-4 text-4xl">Why ABCD?</h3>
-				<section className="grid grid-flow-row grid-cols-2 mx-[74px] gap-4 mb-4 md:grid-rows2">
+				<h3 className="mx-[25px] lg:mx-[74px] mt-20 text-[#ffd000] font-bold mb-4 text-4xl">Why ABCD?</h3>
+				<section className="grid lg:grid-flow-row lg:grid-cols-2 mx-[25px] lg:mx-[74px] gap-4 ">
 					<WhyABCD
 						heading="Work with Us"
 						item1="Improved quality assurance & trust for your project/business"
@@ -73,7 +74,7 @@ export default function About() {
 					/>
 				</section>
 
-				<div className="bg-[#121212] p-8 w-[600px] h-[370px] mx-auto mb-24">
+				<div className="bg-[#121212] p-8 lg:w-[600px] mx-[25px] lg:mx-auto mb-24 mt-4">
 					<h3 className="font-semibold text-4xl text-[#ffd000]">The Alpha Mission</h3>
 					<p className="text-sm mt-4">Building an ecosystem that supports development by:</p>
 					<ul className="list-decimal list-inside text-sm leading-10">
@@ -88,8 +89,8 @@ export default function About() {
 					</ul>
 				</div>
 
-				<h3 className="font-semibold text-4xl text-[#ffd000] mx-[50px]">ABCD team</h3>
-				<div className="grid grid-cols-4 gap-4 mx-[50px] mb-12 mt-36 mb-36">
+				<h3 className="font-semibold text-4xl text-[#ffd000] mx-[25px] lg:mx-[50px]">ABCD team</h3>
+				<div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mx-[25px] lg:mx-[50px] mt-36">
 					<TeamId
 						picture={<Image src={Joshua} width={299.94} height={321.36} alt="Joshua Akpan" />}
 						Name="Joshua Akpan"

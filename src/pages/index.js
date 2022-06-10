@@ -23,27 +23,31 @@ export default function Home() {
 			</Head>
 			<Navigation />
 			<main>
-				<section className="bg-[#ffd000] w-[974px] h-[500px] mt-[120px]">
-					<h1 className="mx-[50px] text-black font-bold text-6xl w-[550px] relative top-[87px]">
+				<section className="bg-[#ffd000] w-full lg:w-[974px] h-[400px] lg:h-[500px] lg:mt-[120px] lg:top-[0] relative top-[370px]">
+					<h1 className="mx-[25px] lg:mx-[50px] text-black font-bold text-4xl w-[80%] lg:text-6xl lg:w-[550px] relative top-[87px]">
 						Hire/Get Access to ABCD vetted:
 					</h1>
-					<p className="relative mx-[50px] top-[100px] text-[40px] font-bold">Smart contract engineers</p>
-					<p className="mx-[50px] relative top-[82px] text-black text-[38px]">for your project</p>
+					<p className="mx-[25px] relative lg:mx-[50px] top-[100px] text-[28px] lg:text-[40px] font-bold">
+						Smart contract engineers
+					</p>
+					<p className="mx-[25px] lg:font-normal font-bold lg:mx-[50px] relative top-[82px] text-black text-[38px]">
+						for your project
+					</p>
 
-					<button className=" mx-[50px] bg-[#FFD000] border border-black text-black font-bold relative top-[100px] text-base rounded w-[15%] h-[40px]">
+					<button className="mx-[25px] lg:mx-[50px] bg-[#FFD000] border border-black text-black font-bold relative top-[100px] text-base rounded w-[25%] lg:w-[15%] h-[40px]">
 						Get Started
 					</button>
 				</section>
-				<div className="w-3/5 relative left-[35%] bottom-[405px]">
+				<div className="w-full lg:w-3/5 relative lg:left-[35%] bottom-[405px]">
 					<Image src={LandingHero} width={1024} height={768} layout="responsive" alt="Landing Hero Image" />
 				</div>
 
 				{/**What we do */}
-				<section className="flex justify-between -mt-[23%] md:flex-none">
-					<div className="w-1/2">
+				<section className="lg:flex lg:justify-between lg:-mt-[23%] mt-[20px]">
+					<div className="lg:w-1/2 w-full">
 						<Image src={WhatWeDo} width={720} height={589} layout="responsive" alt="What we do" />
 					</div>
-					<aside className="w-[50%]">
+					<aside className="lg:w-[50%] w-screen mx-[20px]">
 						<h2 className="font-semibold text-[50px] text-[#ffd000]">What We Do?</h2>
 						<p className="w-[80%] leading-10">
 							African Blockchain Centre for developers is a development and talent management company
@@ -64,19 +68,25 @@ export default function Home() {
 
 				{/**PARTNERS */}
 				<h2 className="font-semibold text-[45px] text-[#ffd000] text-center mt-12">Partners</h2>
-				<section className="mx-9 grid grid-cols-5 gap-4 mt-4">
+				<section className="mx-9 grid grid-cols-3 lg:grid-cols-5 gap-4 mt-4">
 					<Image src={Empowa} width={250} height={150} alt="Empowa Logo" />
 					<Image src={Emurgo} width={250} height={150} alt="Emurgo Logo" />
 					<Image src={Africa} width={250} height={150} alt="Proof of Africa" />
+
 					<Image src={Zoepool} width={250} height={150} alt="Zoepool Logo" />
+
 					<Image src={DApp} width={250} height={150} alt="DApp 360" />
 				</section>
 				{/**END OF PARTNERS */}
 
 				{/**TALENT SHOWCASE */}
-				<h2 className="font-semibold text-[45px] text-[#ffd000] mt-20 mx-[50px]">Talent Showcase</h2>
-				<p className="mx-[70px] mt-4 leading-10">Trained and seasoned Blockchain Developers.</p>
-				<div className="ml-[53%]">
+				<h2 className="font-semibold text-[30px] lg:text-[45px] text-[#ffd000] mt-20 mx-[25px] g:mx-[50px]">
+					Talent Showcase
+				</h2>
+				<p className="mx-[25px] lg:mx-[35px] mt-4 text-sm lg:text-[18px] leading-10">
+					Trained and seasoned Blockchain Developers.
+				</p>
+				<div className="lg:ml-[53%] ml-[33%]">
 					<Parallel
 						picture={<Image src={Abiona} alt="profile picture" width={120} height={120} />}
 						text1="Adewemiwo Abiona"
@@ -88,7 +98,7 @@ export default function Home() {
 						icon6={<Php />}
 					/>
 				</div>
-				<div className="ml-[43%]">
+				<div className="lg:ml-[43%] ml-[20%]">
 					<Parallel
 						picture={<Image src={Alfred} alt="profile picture" width={120} height={120} />}
 						text1="Alfred Johnson"
@@ -98,7 +108,7 @@ export default function Home() {
 						icon4={<React />}
 					/>
 				</div>
-				<div className="ml-[32%]">
+				<div className="lg:ml-[32%] ml-[12%]">
 					<Parallel
 						picture={<Image src={Sam} alt="profile picture" width={120} height={120} />}
 						text1="Sam-Obisike Chibueze"
