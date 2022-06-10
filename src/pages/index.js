@@ -2,15 +2,18 @@ import Head from 'next/head';
 import Image from 'next/image';
 import LandingHero from '/public/LandingHero.png';
 import WhatWeDo from '/public/WhatWeDo.png';
-import Link from 'next/link';
 import Navigation from '../components/Navigation';
-import Button from '../components/Elements';
+import { HTML5, CSS3, JS, TypeScript, Php, Bootstrap, Nodejs, React, Vue } from '../../public/icons';
 import Empowa from '/public/empowa.png';
 import Emurgo from '/public/emurgo.png';
 import Africa from '/public/africa.png';
 import Zoepool from '/public/zoepool.png';
 import DApp from '/public/DApp.png';
 import Parallel from '../components/Parallel';
+import Alfred from '/public/Alfred.png';
+import Sam from '/public/Sam.png';
+import Abiona from '/public/Abiona.png';
+import Footer from '../components/Footer';
 
 export default function Home() {
 	return (
@@ -21,21 +24,22 @@ export default function Home() {
 			<Navigation />
 			<main>
 				<section className="bg-[#ffd000] w-[974px] h-[500px] mt-[120px]">
-					<h1 className="mx-[70px] text-black font-bold text-6xl w-[550px] relative top-[87px]">
+					<h1 className="mx-[50px] text-black font-bold text-6xl w-[550px] relative top-[87px]">
 						Hire/Get Access to ABCD vetted:
 					</h1>
-					<p className="relative mx-[70px] top-[100px] text-[40px] font-bold">Smart contract engineers</p>
-					<p className="mx-[70px] relative top-[82px] text-black text-[38px]">for your project</p>
-					<div className="mx-[70px] border border-black relative top-[100px] w-[15%] rounded">
-						<Button text="Get Started" />
-					</div>
+					<p className="relative mx-[50px] top-[100px] text-[40px] font-bold">Smart contract engineers</p>
+					<p className="mx-[50px] relative top-[82px] text-black text-[38px]">for your project</p>
+
+					<button className=" mx-[50px] bg-[#FFD000] border border-black text-black font-bold relative top-[100px] text-base rounded w-[15%] h-[40px]">
+						Get Started
+					</button>
 				</section>
 				<div className="w-3/5 relative left-[35%] bottom-[405px]">
 					<Image src={LandingHero} width={1024} height={768} layout="responsive" alt="Landing Hero Image" />
 				</div>
 
 				{/**What we do */}
-				<section className="flex justify-between -mt-[23%] overflow-hidden">
+				<section className="flex justify-between -mt-[23%] md:flex-none">
 					<div className="w-1/2">
 						<Image src={WhatWeDo} width={720} height={589} layout="responsive" alt="What we do" />
 					</div>
@@ -60,7 +64,7 @@ export default function Home() {
 
 				{/**PARTNERS */}
 				<h2 className="font-semibold text-[45px] text-[#ffd000] text-center mt-12">Partners</h2>
-				<section className="mx-9 flex justify-between mt-4">
+				<section className="mx-9 grid grid-cols-5 gap-4 mt-4">
 					<Image src={Empowa} width={250} height={150} alt="Empowa Logo" />
 					<Image src={Emurgo} width={250} height={150} alt="Emurgo Logo" />
 					<Image src={Africa} width={250} height={150} alt="Proof of Africa" />
@@ -70,17 +74,43 @@ export default function Home() {
 				{/**END OF PARTNERS */}
 
 				{/**TALENT SHOWCASE */}
-				<h2 className="font-semibold text-[45px] text-[#ffd000] mt-20 mx-[70px]">Talent Showcase</h2>
-				<p className="mx-[70px] leading-10">Trained and seasoned Blockchain Developers.</p>
+				<h2 className="font-semibold text-[45px] text-[#ffd000] mt-20 mx-[50px]">Talent Showcase</h2>
+				<p className="mx-[70px] mt-4 leading-10">Trained and seasoned Blockchain Developers.</p>
+				<div className="ml-[53%]">
+					<Parallel
+						picture={<Image src={Abiona} alt="profile picture" width={120} height={120} />}
+						text1="Adewemiwo Abiona"
+						icon1={<HTML5 />}
+						icon2={<CSS3 />}
+						icon3={<JS />}
+						icon4={<Bootstrap />}
+						icon5={<TypeScript />}
+						icon6={<Php />}
+					/>
+				</div>
 				<div className="ml-[43%]">
-					<Parallel text1="Adewemiwo Abiona" />
+					<Parallel
+						picture={<Image src={Alfred} alt="profile picture" width={120} height={120} />}
+						text1="Alfred Johnson"
+						icon1={<JS />}
+						icon2={<Php />}
+						icon3={<Nodejs />}
+						icon4={<React />}
+					/>
 				</div>
-				<div className="ml-[17%]">
-					<Parallel text1="Alfred Johnson" />
+				<div className="ml-[32%]">
+					<Parallel
+						picture={<Image src={Sam} alt="profile picture" width={120} height={120} />}
+						text1="Sam-Obisike Chibueze"
+						icon1={<Nodejs />}
+						icon2={<React />}
+						icon3={<Vue />}
+						icon4={<TypeScript />}
+					/>
 				</div>
-				<div className="ml-[7%]">
-					<Parallel text1="Sam-Obisike Chibueze" />
-				</div>
+
+				{/**FOOTER */}
+				<Footer />
 			</main>
 		</div>
 	);

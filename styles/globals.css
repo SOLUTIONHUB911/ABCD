@@ -3,6 +3,7 @@ body{
   background-color: #030303;
   color: white;
   font-family: 'Open Sans';
+  overflow-x: hidden;
 }
 @tailwind components;
 @tailwind utilities;

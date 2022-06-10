@@ -1,13 +1,12 @@
 import Image from 'next/image';
-import ABCD from '../public/ABCD.png';
-import Button from './Elements';
+import ABCD from '/public/ABCD.png';
 import Link from 'next/link';
 export default function Navigation() {
 	return (
-		<nav className="flex justify-between mx-[70px] mt-10 items-center">
+		<nav className="flex justify-between mx-[50px] mt-10 items-center">
 			<Link href="/">
 				<a>
-					<Image strategy="lazyOnload" src={ABCD} height={35} width={150} alt="ABCD" />
+					<Image strategy="lazyOnload" src={ABCD} height={35} width={150} layout="fixed" alt="ABCD" />
 				</a>
 			</Link>
 			<ul className="flex">
@@ -32,9 +31,9 @@ export default function Navigation() {
 					</a>
 				</Link>
 			</ul>
-			<div className="py-2.5 px-5">
-				<Button text="Join ABCD" />
-			</div>
+			<button className="bg-[#FFD000] py-2.5 px-5 text-black font-bold text-base rounded w-[130px] h-[40px]">
+				Join ABCD
+			</button>
 		</nav>
 	);
 }
