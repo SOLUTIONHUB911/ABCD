@@ -2,7 +2,7 @@ import { BlackLinkedIn, BlackTwitter } from '../../public/icons';
 
 export default function TeamId({ picture, Name, Position }) {
 	return (
-		<div className="w-[270px] h-[445px] bg-white">
+		<div className="mr-[4px] w-full lg:w-[270px] bg-white p-[4px]">
 			<figure>{picture}</figure>
 			<p className="text-black text-lg font-semibold mx-[20px] mt-12">{Name}</p>
 			<p className="text-black text-sm font-semibold mx-[20px]">{Position}</p>

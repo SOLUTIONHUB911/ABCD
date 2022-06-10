@@ -3,7 +3,6 @@ export default function Parallel({ picture, text1, icon1, icon2, icon3, icon4, i
 	return (
 		<div className={styles.container}>
 			<div className={styles.properties}>{picture}</div>
-			{/* {props.children} */}
 			<aside className={styles.text}>
 				{text1}
 				<div className="flex mt-4">

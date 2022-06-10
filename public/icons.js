@@ -272,7 +272,18 @@ const BlackTwitter = () => {
 		</svg>
 	);
 };
+
+const Menu = () => {
+	return (
+		<svg width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.25 8.75H23.75" stroke="#CCD2E3" strokeWidth="2" strokeLinecap="round" />
+			<path d="M6.25 15H23.75" stroke="#CCD2E3" strokeWidth="2" strokeLinecap="round" />
+			<path d="M6.25 21.25H23.75" stroke="#CCD2E3" strokeWidth="2" strokeLinecap="round" />
+		</svg>
+	);
+};
 export {
+	Menu,
 	HTML5,
 	CSS3,
 	JS,
