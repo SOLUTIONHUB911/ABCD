@@ -2,9 +2,16 @@ import Image from 'next/image';
 import ABCD from '/public/ABCD.png';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Menu } from '../../public/icons';
+import Toggle from './Toggle';
+import styles from '/styles/Hero.module.css';
+import { useState } from 'react';
+import Menu from './Menu';
 export default function Navigation() {
 	const router = useRouter();
+	const [ State, setState ] = useState(false);
+	const onClick = () => {
+		setState(!State);
+	};
 	return (
 		<nav className="flex justify-between mx-[25px] lg:mx-[50px] mt-10 items-center">
 			<Link href="/">
@@ -12,9 +19,12 @@ export default function Navigation() {
 					<Image strategy="lazyOnload" src={ABCD} height={35} width={150} layout="fixed" alt="ABCD" />
 				</a>
 			</Link>
-			<div className="lg:hidden relative bottom-[5px]">
-				<Menu />
-			</div>
+
+			{State ? (
+				<Toggle isOn={State} onClick={onClick} className={styles.change} />
+			) : (
+				<Toggle isOn={State} onClick={onClick} className={styles.menu} />
+			)}
 			<ul className="lg:flex hidden">
 				<Link href="/About">
 					<a className={router.pathname == '/About' ? 'text-[#ffd000]' : 'text-white'}>
@@ -40,6 +50,7 @@ export default function Navigation() {
 			<button className="hidden lg:block bg-[#FFD000] py-2 px-5 text-black font-bold text-base rounded w-[130px] h-[40px]">
 				Join ABCD
 			</button>
+			{State && <Menu />}
 		</nav>
 	);
 }

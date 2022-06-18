@@ -1,8 +1,14 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 @tailwind base;
 body{
   background-color: #030303;
   color: white;
-  font-family: 'Open Sans';
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 @tailwind components;

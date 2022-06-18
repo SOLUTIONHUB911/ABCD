@@ -14,6 +14,8 @@ import Alfred from '/public/Alfred.png';
 import Sam from '/public/Sam.png';
 import Abiona from '/public/Abiona.png';
 import Footer from '../components/Footer';
+import Menu from '../components/Menu';
+import { useState } from 'react';
 
 export default function Home() {
 	return (

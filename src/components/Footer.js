@@ -5,7 +5,7 @@ import { Discord, FaceBook, Instagram, LinkedIn, Medium, Twitter } from '../../p
 import Subscribe from './Subscribe';
 export default function Footer() {
 	return (
-		<footer className="mx-[17px] lg:mx-[50px] mt-64">
+		<footer className="mx-[17px] lg:mx-[50px] mt-44">
 			<section className="lg:grid-cols-4 grid gap-4">
 				<div className="w-full lg:col-span-2 col-span-4 font-bold text-2xl items-center">
 					<Link href="/">
