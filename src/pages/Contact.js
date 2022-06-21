@@ -6,10 +6,10 @@ export default function Contact() {
 	return (
 		<div>
 			<Navigation />
-			<h2 className="mx-4 font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
+			<h2 className="font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
 				Contact Us
 			</h2>
-			<p className="mx-4 lg:mx-[50px] text-sm lg:text-[18px] leading-10">Get in touch with us</p>
+			<p className="mx-[25px] lg:mx-[50px] text-sm lg:text-[18px] leading-10">Get in touch with us</p>
 
 			{/**INQUIRY */}
 			<section className="md:flex md:justify-around lg:ml-[8%] mt-12">

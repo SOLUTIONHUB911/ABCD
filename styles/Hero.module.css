@@ -30,14 +30,17 @@
 .change {
   display: none;
   cursor: pointer;
+  width: 33px;
+  padding: 4px;
+  margin-top: -5px;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-  width: 33px;
-  height: 5px;
-  background: red;
+  width: 30px;
+  height: 4px;
+ background-color: white;
   margin-top: 5px;
   transition: 0.4s;
 }
@@ -56,22 +59,52 @@
   transform: rotate(45deg) translate(-5px, -8px);
 }
 
-
+/*COLLAPSIBLE*/
+.collapsible{
+  width: 55%;
+  float:right;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.collapsible .content {
+  padding: 6px;
+  background-color: #121212;
+  font-size: 15px;
+}
+.content p{
+  width: 70%;
+ margin-bottom: 40px;
+}
+.collapsible .header {
+  background-color: #121212;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collapsible .header .title {
+    font-weight: 700;
+}
+.title{
+  color:#ffd000;
+  margin-left: 20px;
+}
+.preferences p{
+  display: block;
+ margin-left: 20px;
+}
 @media only screen and (max-width: 400px) {
   /*NAVIGATION.JS */
 .menu, .change {
   display: inline-block;
 }
 }
-
 @media only screen and (min-width: 401px) and (max-width: 768px){
 /*NAVIGATION.JS */
 .menu,
 .change {
   display: inline-block;
-}
-.bar1,.bar2,.bar3{
-  margin-left: 457px;
 }
 .text{
   margin-left: 25px;

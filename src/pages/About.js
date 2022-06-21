@@ -9,6 +9,7 @@ import Destiny from '/public/Destiny.png';
 import Otobong from '/public/Otobong.png';
 import Gwendal from '/public/Gwendal.png';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 export default function About() {
 	return (
 		<div>
@@ -30,9 +31,13 @@ export default function About() {
 							development, manage their product or get access to top-notch consultancy based on their
 							needs in the web3 space.
 						</p>
-						<button className="mt-12 bg-[#FFD000] text-black font-bold text-base rounded w-[81px] h-[40px]">
-							FAQs
-						</button>
+						<Link href="/FAQ">
+							<a>
+								<button className="mt-12 bg-[#FFD000] text-black font-bold text-base rounded w-[81px] h-[40px]">
+									FAQs
+								</button>
+							</a>
+						</Link>
 					</div>
 				</section>
 

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 export default function Menu() {
 	const router = useRouter();
 	return (
-		<nav className="border bg-[#121212]">
+		<nav className="border bg-[#121212] absolute z-10 top-[80px] left-[65%]">
 			<ul>
 				<Link href="/About">
 					<a className={router.pathname == '/About' ? 'text-[#ffd000]' : 'text-white'}>
