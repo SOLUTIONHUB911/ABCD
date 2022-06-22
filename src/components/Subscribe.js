@@ -1,6 +1,6 @@
 export default function Subscribe() {
 	return (
-		<form className="w-full lg:w-[640px] mb-12 mt-4">
+		<form className="w-full lg:w-[640px] mb-12 mt-4" action="/api/mail" method="post">
 			<input
 				aria-label="Email for newsletter"
 				placeholder="Email Address"
