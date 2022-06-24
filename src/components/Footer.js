@@ -42,7 +42,7 @@ export default function Footer() {
 					<p className="text-xs font-normal mt-[16px]">info@abcdevs.com</p>
 					<div className="grid grid-cols-6 gap-4 items-center -mx-[10px] mt-[16px]">
 						<FaceBook />
-						<Discord />
+						<Discord color="white" />
 						<Twitter />
 						<LinkedIn />
 						<Instagram />

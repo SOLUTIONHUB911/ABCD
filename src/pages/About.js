@@ -16,7 +16,7 @@ export default function About() {
 			<Navigation />
 			<main>
 				<h3 className="lg:ml-[50px] ml-[25px] mt-20 text-[#ffd000] font-bold mb-4 text-4xl">About ABCD</h3>
-				<section className="gid-rows-2 grid lg:grid-cols-2 mx-[25px] lg:ml-[50px] gap-4">
+				<section className="grid-rows-2 grid lg:grid-cols-2 mx-[25px] lg:ml-[50px] gap-4">
 					<figure className="lg:order-last">
 						<Image src={AboutHero} width={747} height={559} alt="About Hero" />
 					</figure>
