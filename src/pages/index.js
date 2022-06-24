@@ -25,7 +25,7 @@ export default function Home() {
 			</Head>
 			<Navigation />
 			<main>
-				<section className="bg-[#ffd000] w-full lg:w-[974px] h-[400px] lg:h-[500px] lg:mt-[120px] lg:top-[0] relative top-[370px]">
+				<section className="animation-fade w-full lg:w-[974px] h-[400px] lg:h-[500px] lg:mt-[120px] lg:top-[0] relative top-[370px] bg-[#ffd000]">
 					<h1 className="mx-[25px] lg:mx-[50px] text-black font-bold text-4xl w-[80%] lg:text-6xl lg:w-[550px] relative top-[87px]">
 						Hire/Get Access to ABCD vetted:
 					</h1>
