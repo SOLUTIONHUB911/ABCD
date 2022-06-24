@@ -1,7 +1,5 @@
 import Navigation from '../components/Navigation';
 import Image from 'next/image';
-import AboutHero from '/public/About-Hero.png';
-import ABCDJourney from '/public/ABCD Journey.png';
 import WhyABCD from '../components/WhyABCD';
 import TeamId from '../components/TeamId';
 import Joshua from '/public/JoshuaA.png';
@@ -10,15 +8,16 @@ import Otobong from '/public/Otobong.png';
 import Gwendal from '/public/Gwendal.png';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import { ABCDJourney, AboutHero } from '../components/icons';
 export default function About() {
 	return (
 		<div>
 			<Navigation />
-			<main>
+			<main className="font-Roboto">
 				<h3 className="lg:ml-[50px] ml-[25px] mt-20 text-[#ffd000] font-bold mb-4 text-4xl">About ABCD</h3>
 				<section className="grid-rows-2 grid lg:grid-cols-2 mx-[25px] lg:ml-[50px] gap-4">
 					<figure className="lg:order-last">
-						<Image src={AboutHero} width={747} height={559} alt="About Hero" />
+						<AboutHero />
 					</figure>
 
 					<div>
@@ -33,7 +32,9 @@ export default function About() {
 						</p>
 						<Link href="/FAQ">
 							<a>
-								<button className="mt-12 bg-[#FFD000] text-black font-bold text-base rounded w-[81px] h-[40px]">
+								<button className="mt-12 bg-[#FFD000] text-black font-bold text-base
+								 rounded w-[81px] h-[40px]
+								 hover:text-white hover:bg-black hover:border hover:border-[#ffd000] hover:shadow-lg">
 									FAQs
 								</button>
 							</a>
@@ -42,9 +43,9 @@ export default function About() {
 				</section>
 
 				{/**ABCD JOURNEY */}
-				<section className="lg:grid lg:grid-cols-2 mx-[25px] lg:mr-[50px] gap-4 mt-40">
-					<figure className="lg:mt-24">
-						<Image src={ABCDJourney} width={805} height={604} alt="ABCD Journey" />
+				<section className="lg:grid lg:grid-cols-2 mx-[25px] lg:mr-[50px] gap-4 -mt-[570px]">
+					<figure className="lg:mt-12">
+						<ABCDJourney />
 					</figure>
 					<div>
 						<h3 className="text-[#ffd000] font-bold mb-4 text-4xl">ABCD Journey</h3>
