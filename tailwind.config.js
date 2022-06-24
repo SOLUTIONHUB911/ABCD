@@ -1,7 +1,15 @@
 module.exports = {
-	content: [ './src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}' ],
+	content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
+			fontFamily: {
+				roboto: ['Roboto', 'sans-serif'],
+			},
+			colors: {
+				theme: {
+					main: '#FFD000',
+				},
+			},
 			// // that is animation class
 			// animation: {
 			// 	fade: 'fadeOut 15s ease-in-out'
@@ -13,7 +21,12 @@ module.exports = {
 			// 		'100%': { backgroundColor: 'transparent' }
 			// 	}
 			// }
-		}
+		},
 	},
-	plugins: []
+	plugins: [],
 };
+
+{
+	/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link> */
+}
