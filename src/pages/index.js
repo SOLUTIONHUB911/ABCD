@@ -1,9 +1,19 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import LandingHero from '/public/LandingHero.png';
-import WhatWeDo from '/public/WhatWeDo.png';
 import Navigation from '../components/Navigation';
-import { HTML5, CSS3, JS, TypeScript, Php, Bootstrap, Nodejs, React, Vue } from '../../public/icons';
+import {
+	HTML5,
+	CSS3,
+	JS,
+	TypeScript,
+	Php,
+	Bootstrap,
+	Nodejs,
+	React,
+	Vue,
+	LandingHero,
+	WhatWeDo
+} from '../components/icons';
 import Empowa from '/public/empowa.png';
 import Emurgo from '/public/emurgo.png';
 import Africa from '/public/africa.png';
@@ -14,7 +24,6 @@ import Alfred from '/public/Alfred.png';
 import Sam from '/public/Sam.png';
 import Abiona from '/public/Abiona.png';
 import Footer from '../components/Footer';
-import Menu from '../components/Menu';
 import { useState } from 'react';
 
 export default function Home() {
@@ -24,8 +33,8 @@ export default function Home() {
 				<title>ABCD</title>
 			</Head>
 			<Navigation />
-			<main>
-				<section className="animation-fade w-full lg:w-[974px] h-[400px] lg:h-[500px] lg:mt-[120px] lg:top-[0] relative top-[370px] bg-[#ffd000]">
+			<main className="font-Roboto">
+				<section className="w-full lg:w-[974px] h-[400px] lg:h-[500px] lg:mt-[120px] lg:top-[0] relative top-[370px] bg-[#ffd000]">
 					<h1 className="mx-[25px] lg:mx-[50px] text-black font-bold text-4xl w-[80%] lg:text-6xl lg:w-[550px] relative top-[87px]">
 						Hire/Get Access to ABCD vetted:
 					</h1>
@@ -36,18 +45,20 @@ export default function Home() {
 						for your project
 					</p>
 
-					<button className="mx-[25px] lg:mx-[50px] bg-[#FFD000] border border-black text-black font-bold relative top-[100px] text-base rounded w-[25%] lg:w-[15%] h-[40px]">
+					<button className="mx-[25px] text-center lg:mx-[50px] bg-[#FFD000] border 
+					border-black text-black font-bold relative top-[100px] text-base rounded 
+					w-[25%] lg:w-[15%] h-[40px] hover:bg-black hover:text-white hover:shadow-xl">
 						Get Started
 					</button>
 				</section>
-				<div className="w-full lg:w-3/5 relative lg:left-[35%] bottom-[405px]">
-					<Image src={LandingHero} width={1024} height={768} layout="responsive" alt="Landing Hero Image" />
+				<div className="w-full lg:w-3/5 relative lg:left-[35%] bottom-[430px]">
+					<LandingHero />
 				</div>
 
 				{/**What we do */}
 				<section className="lg:flex lg:justify-between lg:-mt-[23%] mt-[20px]">
 					<div className="lg:w-1/2 w-full">
-						<Image src={WhatWeDo} width={720} height={589} layout="responsive" alt="What we do" />
+						<WhatWeDo />
 					</div>
 					<aside className="lg:w-[50%] w-screen mx-[20px]">
 						<h2 className="font-semibold text-[50px] text-[#ffd000]">What We Do?</h2>

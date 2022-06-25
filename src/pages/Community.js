@@ -1,4 +1,4 @@
-import { Discord } from '../../public/icons';
+import { Discord } from '../components/icons';
 import Navigation from '../components/Navigation';
 import CommunityHero from '/public/CommunityHero.jpg';
 import Image from 'next/image';
@@ -19,7 +19,8 @@ export default function Community() {
 						smart contract engineers, smart contract security audits, smart contracts testing etc. Connect
 						with experts through networking events, volunteering, and more.
 					</p>
-					<button className="mt-16 flex border border-[#ffd000] py-2 px-5 text-[#ffd000] font-bold text-base rounded h-[40px]">
+					<button className="mt-16 flex border border-[#ffd000] py-2 px-5 text-[#ffd000] 
+					hover:shadow-xl font-bold text-base rounded h-[40px]">
 						Join ABCD{' '}
 						<span className="ml-[10px]">
 							<Discord color="#ffd000" />

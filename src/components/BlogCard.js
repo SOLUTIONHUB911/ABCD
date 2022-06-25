@@ -1,8 +1,6 @@
-import { Arrow } from '../../public/icons';
 import styles from '/styles/Hero.module.css';
 import HeroBlog from '/public/HeroBlog.jpg';
 import Image from 'next/image';
-import Footer from './Footer';
 export default function BlogCard({ title, date, text }) {
 	return (
 		<div className="lg:w-1/2 bg-[#121212] mx-[25px] lg:mx-[50px] mt-[30px]">

@@ -1,4 +1,4 @@
-import { BlackLinkedIn, BlackTwitter } from '../../public/icons';
+import { BlackLinkedIn, BlackTwitter } from './icons';
 
 export default function TeamId({ picture, Name, Position }) {
 	return (

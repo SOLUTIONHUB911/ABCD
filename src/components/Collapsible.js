@@ -1,4 +1,4 @@
-import { CaretDown, CaretUp } from '../../public/icons';
+import { CaretDown, CaretUp } from './icons';
 import styles from '/styles/Hero.module.css';
 import useCollapse from 'react-collapsed';
 export default function Collapsible(props) {
