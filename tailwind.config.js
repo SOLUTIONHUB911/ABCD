@@ -8,6 +8,7 @@ module.exports = {
 			colors: {
 				theme: {
 					main: '#FFD000',
+					dark: '#030303',
 				},
 			},
 			// // that is animation class

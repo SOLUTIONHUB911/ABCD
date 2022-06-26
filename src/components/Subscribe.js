@@ -1,17 +1,21 @@
 export default function Subscribe() {
 	return (
-		<form className="w-full lg:w-[640px] mb-12 mt-4" action="/api/mail" method="post">
+		<form
+			className='relative w-full text-sm leading-[35px] font-roboto font-normal mx-auto'
+			action='/api/mail'
+			method='post'
+		>
 			<input
-				aria-label="Email for newsletter"
-				placeholder="Email Address"
-				type="email"
-				autoComplete="email"
+				aria-label='Email for newsletter'
+				placeholder='Email Address'
+				type='email'
+				autoComplete='email'
 				required
-				className="text-xs p-[7px] w-5/6 text-white bg-[#353535]"
+				className='md:w-full py-1 px-4 text-white bg-[#353535] placeholder:text-[#CECECE] outline-none'
 			/>
 			<button
-				className="bg-[#ffd000] w-1/6 sm:p-[7px] text-[10px] text-white font-semibold sm:text-xs"
-				type="submit"
+				className='absolute bg-theme-main px-4 py-1 text-white hover:text-theme-dark duration-300 ease-in'
+				type='submit'
 			>
 				Subscribe
 			</button>
