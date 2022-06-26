@@ -1,12 +1,12 @@
 import Footer from '../components/Footer';
 import Inquiry from '../components/Inquiry';
 import Navigation from '../components/Navigation';
-
+import styles from '/styles/Hero.module.css';
 export default function Contact() {
 	return (
-		<div>
+		<div className="font-Roboto">
 			<Navigation />
-			<h2 className="font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
+			<h2 className="font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px] font-Roboto">
 				Contact Us
 			</h2>
 			<p className="mx-[25px] lg:mx-[50px] text-sm lg:text-[18px] leading-10">Get in touch with us</p>
@@ -71,10 +71,11 @@ export default function Contact() {
 						<button
 							type="submit"
 							className="h-[50px] p-4 block bg-[#FFD000] col-span-2 text-black text-lg font-semibold"
+							id={styles.btneffect}
 						>
 							Send Message
 						</button>
-						<p className="text-base font-normal col-span-2">*These fields are required</p>
+						<p className="text-base font-normal font-Roboto col-span-2">*These fields are required</p>
 					</form>
 				</div>
 			</section>

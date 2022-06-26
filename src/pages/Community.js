@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 export default function Community() {
 	return (
-		<div>
+		<div className="font-Roboto">
 			<Navigation />
 			<h2 className="font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
 				ABCD Community
@@ -20,16 +20,23 @@ export default function Community() {
 						with experts through networking events, volunteering, and more.
 					</p>
 					<button className="mt-16 flex border border-[#ffd000] py-2 px-5 text-[#ffd000] 
-					hover:shadow-xl font-bold text-base rounded h-[40px]">
+	 font-bold text-base rounded h-[40px]">
 						Join ABCD{' '}
 						<span className="ml-[10px]">
 							<Discord color="#ffd000" />
 						</span>
 					</button>
 				</div>
-				<article className="relative mx-[25px]">
+				<article className="absolute mx-[25px] left-[48%]">
 					<div className={styles.community}>
-						<Image src={CommunityHero} alt="Team Picture" width={620} height={450} layout="responsive" />
+						<Image
+							src={CommunityHero}
+							alt="Team Picture"
+							width={620}
+							height={450}
+							layout="responsive"
+							className="w-screen"
+						/>
 					</div>
 				</article>
 			</main>

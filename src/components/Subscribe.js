@@ -1,3 +1,4 @@
+import styles from '/styles/Hero.module.css';
 export default function Subscribe() {
 	return (
 		<form className="w-full lg:w-[640px] mb-12 mt-4" action="/api/mail" method="post">
@@ -12,6 +13,7 @@ export default function Subscribe() {
 			<button
 				className="bg-[#ffd000] w-1/6 sm:p-[7px] text-[10px] text-white font-semibold sm:text-xs"
 				type="submit"
+				id={styles.btneffect}
 			>
 				Subscribe
 			</button>

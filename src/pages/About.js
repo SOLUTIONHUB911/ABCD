@@ -1,4 +1,5 @@
 import Navigation from '../components/Navigation';
+import styles from '/styles/Hero.module.css';
 import Image from 'next/image';
 import WhyABCD from '../components/WhyABCD';
 import TeamId from '../components/TeamId';
@@ -8,15 +9,28 @@ import Otobong from '/public/Otobong.png';
 import Gwendal from '/public/Gwendal.png';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { ABCDJourney, AboutHero } from '../components/icons';
+import { useEffect } from 'react';
 export default function About() {
+	//useEffect
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
 	return (
 		<div>
 			<Navigation />
 			<main className="font-Roboto">
 				<h3 className="lg:ml-[50px] ml-[25px] mt-20 text-[#ffd000] font-bold mb-4 text-4xl">About ABCD</h3>
 				<section className="grid-rows-2 grid lg:grid-cols-2 mx-[25px] lg:ml-[50px] gap-4">
-					<figure className="lg:order-last">
+					<figure
+						className="lg:order-last"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="1500"
+					>
 						<AboutHero />
 					</figure>
 
@@ -32,9 +46,12 @@ export default function About() {
 						</p>
 						<Link href="/FAQ">
 							<a>
-								<button className="mt-12 bg-[#FFD000] text-black font-bold text-base
+								<button
+									className="mt-12 bg-[#FFD000] text-black font-bold text-base
 								 rounded w-[81px] h-[40px]
-								 hover:text-white hover:bg-black hover:border hover:border-[#ffd000] hover:shadow-lg">
+								 hover:text-white hover:bg-black hover:border hover:border-[#ffd000] hover:shadow-lg"
+									id={styles.btneffect}
+								>
 									FAQs
 								</button>
 							</a>
@@ -44,7 +61,12 @@ export default function About() {
 
 				{/**ABCD JOURNEY */}
 				<section className="lg:grid lg:grid-cols-2 mx-[25px] lg:mr-[50px] gap-4 -mt-[570px]">
-					<figure className="lg:mt-12">
+					<figure
+						className="lg:mt-12"
+						data-aos="fade-up"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+					>
 						<ABCDJourney />
 					</figure>
 					<div>
@@ -80,7 +102,12 @@ export default function About() {
 					/>
 				</section>
 
-				<div className="bg-[#121212] p-8 lg:w-[600px] mx-[25px] lg:mx-auto mb-24 mt-4">
+				<div
+					className="bg-[#121212] p-8 lg:w-[600px] mx-[25px] lg:mx-auto mb-24 mt-4"
+					data-aos="flip-left"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+				>
 					<h3 className="font-semibold text-4xl text-[#ffd000]">The Alpha Mission</h3>
 					<p className="text-sm mt-4">Building an ecosystem that supports development by:</p>
 					<ul className="list-decimal list-inside text-sm leading-10">

@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=VT323&display=swap'); */
+
 @tailwind base;
 body{
   background-color: #030303;
   color: white;
   font-family: 'Roboto', sans-serif;
+  /* font-family: 'VT323', monospace; */
   overflow-x: hidden;
 }
 @tailwind components;
