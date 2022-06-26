@@ -1,10 +1,10 @@
-import { CaretDown, CaretUp } from '../../public/icons';
+import { CaretDown, CaretUp } from './icons';
 import styles from '/styles/Hero.module.css';
 import useCollapse from 'react-collapsed';
 export default function Collapsible(props) {
 	const config = {
 		defaultExpanded: props.defaultExpanded && false,
-		collapsedHeight: props.collapsedHeight || 0
+		collapsedHeight: props.collapsedHeight || 0,
 	};
 	const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
 	return (
