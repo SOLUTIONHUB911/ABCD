@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import LandingHero from '/public/LandingHero.png';
 import WhatWeDo from '/public/WhatWeDo.png';
-import Navigation from '../layout/Navigation';
 import { HTML5, CSS3, JS, TypeScript, Php, Bootstrap, Nodejs, React, Vue } from '../components/icons';
 import Empowa from '/public/empowa.png';
 import Emurgo from '/public/emurgo.png';
@@ -14,7 +13,6 @@ import Parallel, { ShowCase } from '../components/Parallel';
 import Alfred from '/public/Alfred.png';
 import Sam from '/public/Sam.png';
 import Abiona from '/public/Abiona.png';
-// import Footer from '../components/Footer';
 
 export default function Home() {
 	return (

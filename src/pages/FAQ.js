@@ -1,6 +1,4 @@
 import Collapsible from '../components/Collapsible';
-import Footer from '../components/Footer';
-import Navigation from '../components/Navigation';
 import styles from '/styles/Hero.module.css';
 export default function FAQ() {
 	return (
