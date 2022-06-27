@@ -3,19 +3,8 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navigation from '../components/Navigation';
-import {
-	HTML5,
-	CSS3,
-	JS,
-	TypeScript,
-	Php,
-	Bootstrap,
-	Nodejs,
-	React,
-	Vue,
-	LandingHero,
-	WhatWeDo
-} from '../components/icons';
+import { HTML5, CSS3, JS, TypeScript, Php, Bootstrap, Nodejs, React, Vue, WhatWeDo } from '../components/icons';
+import LandingHero from '/public/assets/LandingHero.svg';
 import Empowa from '/public/empowa.png';
 import Emurgo from '/public/emurgo.png';
 import Africa from '/public/africa.png';
@@ -58,14 +47,21 @@ export default function Home() {
 						Get Started
 					</button>
 				</section>
-				<div className="w-full lg:w-3/5 relative lg:left-[35%] bottom-[430px]">
-					<LandingHero className="animate__animated animate__fadeIn" />
+				<div className="w-[full] lg:w-3/5 relative lg:left-[35%] bottom-[430px]">
+					<Image
+						src={LandingHero}
+						width={988}
+						height={741}
+						layout="responsive"
+						alt="landing hero image"
+						className="animate__animated animate__fadeIn"
+					/>
 				</div>
 
 				{/**What we do */}
 				<section className="lg:flex lg:justify-between lg:-mt-[23%] mt-[20px]">
 					<div
-						className="lg:w-1/2 w-full"
+						className="lg:w-1/2 w-[40%] "
 						data-aos="fade-up"
 						data-aos-offset="300"
 						data-aos-easing="ease-in-sine"
@@ -129,7 +125,7 @@ export default function Home() {
 					/>
 				</div>
 				<div
-					className="lg:ml-[43%] ml-[20%]"
+					className="lg:ml-[43%] ml-[24%]"
 					data-aos="fade-left"
 					data-aos-offset="300"
 					data-aos-easing="ease-in-sine"
@@ -144,7 +140,7 @@ export default function Home() {
 					/>
 				</div>
 				<div
-					className="lg:ml-[32%] ml-[12%]"
+					className="lg:ml-[32%] ml-[8%]"
 					data-aos="fade-right"
 					data-aos-offset="300"
 					data-aos-easing="ease-in-sine"

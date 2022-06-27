@@ -4,15 +4,23 @@ import CommunityHero from '/public/CommunityHero.jpg';
 import Image from 'next/image';
 import styles from '/styles/Hero.module.css';
 import Footer from '../components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import Aos from 'aos';
 
 export default function Community() {
+	useEffect(() => {
+		AOS.init();
+		Aos.refresh();
+	}, []);
 	return (
 		<div className="font-Roboto">
 			<Navigation />
 			<h2 className="font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
 				ABCD Community
 			</h2>
-			<main className=" grid-rows-2 grid lg:flex lg:justify-between mb-12">
+			<main className=" grid-rows-2 grid lg:flex lg:justify-between mb-12 lg:h-[500px]">
 				<div className="mx-[25px] lg:mx-[50px] lg:w-[40%] order-last">
 					<p className="leading-10 tracking-wide text-sm text-justify">
 						Join the world’s most influential workforce in eb3 product managers, web3 product designers,
@@ -27,15 +35,18 @@ export default function Community() {
 						</span>
 					</button>
 				</div>
-				<article className="absolute mx-[25px] left-[48%]">
+				<article className="absolute left-[50%] w-full mb-[160px]">
 					<div className={styles.community}>
 						<Image
 							src={CommunityHero}
 							alt="Team Picture"
-							width={620}
-							height={450}
+							width={720}
+							height={500}
+							className={styles.communityImg}
 							layout="responsive"
-							className="w-screen"
+							data-aos="flip-up"
+							data-aos-offset="300"
+							data-aos-easing="ease-in-sine"
 						/>
 					</div>
 				</article>
