@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation';
 import styles from '/styles/Hero.module.css';
 export default function FAQ() {
 	return (
-		<div>
+		<div className="font-Roboto">
 			<Navigation />
 			<h2 className="w-[35%] font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
 				FAQs
