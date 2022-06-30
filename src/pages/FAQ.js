@@ -15,11 +15,53 @@ export default function FAQ() {
 
 			<div className={styles.preferences}>
 				<Collapsible title="DATA COLLECTION" defaultExpanded="true">
-					<p>Here we collect data from the devs to understand their background and strength.</p>
+					<div>
+						<p>Here we collect data from the devs to understand their background and strength.</p>
+					</div>
 				</Collapsible>
-				<Collapsible title="FIRST INTERVIEW" defaultExpanded="false" />
-				<Collapsible title="TECHNICAL INTERVIEW" defaultExpanded="false" />
-				<Collapsible title="FINAL STAGE & COMPLETE PROFILING" defaultExpanded="false" />
+				<Collapsible title="FIRST INTERVIEW" defaultExpanded="false">
+					<div>
+						<p className="mb-0">To get to know the candidate and understand their experience level.</p>
+					</div>
+				</Collapsible>
+				<Collapsible title="TECHNICAL INTERVIEW" defaultExpanded="false">
+					<div>
+						<p>At his stage, the developers take 3 tests:</p>
+						<ul className="list-disc list-inside mx-[25px]">
+							<li>
+								A technical test that helps us have an understanding of their actual technical strength.
+							</li>
+							<li>
+								{' '}
+								An aptitude test to help us understand their level of dexterity & problem-solving
+								ability.
+							</li>
+							<li>
+								{' '}
+								A personality test that helps us profile their strengths and understand work situations
+								where they are the best fit.
+							</li>
+						</ul>
+					</div>
+				</Collapsible>
+				<Collapsible title="FINAL STAGE & COMPLETE PROFILING" defaultExpanded="false">
+					<div>
+						<p>
+							Every process and interview leading to this is carefully documented to help us carefully
+							create important details and a profile about the developer. This includes:
+						</p>
+						<ul className="list-disc list-inside mx-[25px]">
+							<li>Name and Resume.</li>
+							<li>Their Tech Stack or Technology.</li>
+							<li>Years of Experience.</li>
+							<li>
+								Perceived conclusion on their communication skill, leadership ability and level of
+								experience.
+							</li>
+							<li>Test Score from their technical test, aptitude test and personality test.</li>
+						</ul>
+					</div>
+				</Collapsible>
 			</div>
 
 			<div className="mt-[35rem]">

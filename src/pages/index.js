@@ -3,8 +3,9 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navigation from '../components/Navigation';
-import { HTML5, CSS3, JS, TypeScript, Php, Bootstrap, Nodejs, React, Vue, WhatWeDo } from '../components/icons';
+import { HTML5, CSS3, JS, TypeScript, Php, Bootstrap, Nodejs, React, Vue } from '../components/icons';
 import LandingHero from '/public/assets/LandingHero.svg';
+import WhatWeDo from '/public/assets/WhatWeDo.svg';
 import Empowa from '/public/empowa.png';
 import Emurgo from '/public/emurgo.png';
 import Africa from '/public/africa.png';
@@ -17,7 +18,10 @@ import Abiona from '/public/Abiona.png';
 import Footer from '../components/Footer';
 import styles from '/styles/Hero.module.css';
 import 'animate.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Register from './Register';
+import Client from '../components/Client';
+import { useRouter } from 'next/router';
 
 export default function Home() {
 	//useEffect
@@ -26,26 +30,54 @@ export default function Home() {
 		AOS.refresh();
 	}, []);
 
+	const router = useRouter();
+	const [ Form, setForm ] = useState(false);
+	function onClick() {
+		setForm(!Form);
+	}
+	function onClose() {
+		setForm(!Form);
+	}
 	return (
 		<div>
 			<Head>
 				<title>ABCD</title>
 			</Head>
 			<Navigation />
-			<main className="font-Roboto">
-				<section className="w-full lg:w-[974px] h-[400px] lg:h-[500px] lg:mt-[120px] lg:top-[0] relative top-[370px] bg-[#ffd000]">
-					<h1 className="mx-[25px] lg:mx-[50px] text-black font-bold font-Roboto text-4xl w-[80%] lg:text-6xl lg:w-[550px] relative top-[87px]">
+			<main className="font-roboto">
+				<section className="lg:w-[974px] h-[400px] lg:h-[500px] lg:mt-[120px] lg:top-[0] relative top-[370px] bg-[#ffd000]">
+					<h1 className="mx-[25px] lg:mx-[50px] text-black font-bold font-roboto w-full text-4xl lg:w-[80%] lg:text-6xl lg:w-[550px] relative top-[87px]">
 						Hire/Get Access to ABCD vetted:
 					</h1>
-					<p className="mx-[25px] relative lg:mx-[50px] font-Roboto top-[100px] text-[28px] lg:text-[40px] font-bold">
+					<p className="mx-[25px] relative lg:mx-[50px] font-roboto top-[93px] text-[28px] lg:text-[40px] font-bold">
 						Smart contract engineers
 					</p>
-					<p className="mx-[25px] lg:font-normal font-bold font-Roboto lg:mx-[50px] relative top-[82px] text-black text-[38px]">
+					<p className="mx-[25px] lg:font-normal font-bold font-roboto lg:mx-[50px] relative top-[82px] text-black text-[38px]">
 						for your project
 					</p>
-					<button className={styles.started} id={styles.btneffect}>
+					<button className={styles.started} id={styles.btneffect} onClick={onClick}>
 						Get Started
 					</button>
+					{Form && (
+						<Register onChange={onClose}>
+							<div className="mx-auto mt-12">
+								<a
+									className={
+										router.pathname == '/src/components/Client.js' ? (
+											'bg-[#ffd000] && text-black'
+										) : (
+											'bg-black && text-[#ffd000]'
+										)
+									}
+								>
+									<button className=" hover:bg-[#ffd000] text-center font-roboto hover:text-black ml-[25px] text-[#ffd000] border border-[#ffd000] w-[91%] mr-[25px] p-[8px]">
+										Client
+									</button>
+								</a>
+							</div>
+							<Client />
+						</Register>
+					)}
 				</section>
 				<div className="w-[full] lg:w-3/5 relative lg:left-[35%] bottom-[430px]">
 					<Image
@@ -59,23 +91,18 @@ export default function Home() {
 				</div>
 
 				{/**What we do */}
-				<section className="lg:flex lg:justify-between lg:-mt-[23%] mt-[20px]">
-					<div
-						className="lg:w-1/2 w-[40%] "
-						data-aos="fade-up"
-						data-aos-offset="300"
-						data-aos-easing="ease-in-sine"
-					>
-						<WhatWeDo />
+				<section className="lg:flex lg:justify-between md:-mt-[23%] mt-[20px]">
+					<div className="w-full" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+						<Image src={WhatWeDo} width={786} height={589} layout="responsive" alt="What we Do image" />
 					</div>
-					<aside className="lg:w-[50%] w-screen mx-[20px]">
-						<h2 className="font-semibold text-[50px] text-[#ffd000] font-Roboto">What We Do?</h2>
-						<p className="w-[80%] leading-10">
+					<aside className="w-[95%] mx-[20px] text-lg">
+						<h2 className="font-semibold text-[50px] text-[#ffd000] font-roboto">What We Do?</h2>
+						<p className="lg:w-[80%] leading-10 font-roboto text-lg">
 							African Blockchain Centre for developers is a development and talent management company
 							focused on connecting clients with vetted talents capable of web3 solutions design and
 							development solutions.
 						</p>
-						<ul className="mt-[35px] w-[80%] leading-10 list-disc list-inside">
+						<ul className="mt-[35px] w-[80%] leading-10 font-roboto list-disc list-inside">
 							<li>Client-Talent bridge</li>
 							<li>Talent vetting and management</li>
 							<li>Product development and management</li>
@@ -88,7 +115,7 @@ export default function Home() {
 				{/**End of What We Do */}
 
 				{/**PARTNERS */}
-				<h2 className="font-semibold text-[45px] text-[#ffd000] text-center mt-12 font-Roboto">Partners</h2>
+				<h2 className="font-semibold text-[45px] text-[#ffd000] text-center mt-12 font-roboto">Partners</h2>
 				<section className="mx-9 grid grid-cols-3 lg:grid-cols-5 gap-4 mt-4">
 					<Image src={Empowa} width={250} height={150} alt="Empowa Logo" />
 					<Image src={Emurgo} width={250} height={150} alt="Emurgo Logo" />
@@ -101,10 +128,10 @@ export default function Home() {
 				{/**END OF PARTNERS */}
 
 				{/**TALENT SHOWCASE */}
-				<h2 className="font-semibold text-[30px] lg:text-[45px] font-Roboto text-[#ffd000] mt-20 mx-[25px] g:mx-[50px]">
+				<h2 className="font-semibold text-[30px] lg:text-[45px] font-roboto text-[#ffd000] mt-20 mx-[25px] g:mx-[50px]">
 					Talent Showcase
 				</h2>
-				<p className="mx-[25px] lg:mx-[35px] mt-4 text-sm lg:text-[18px] font-Roboto leading-10">
+				<p className="mx-[25px] lg:mx-[35px] mt-4 text-sm lg:text-[20px] font-roboto leading-10">
 					Trained and seasoned Blockchain Developers.
 				</p>
 				<div
@@ -125,7 +152,7 @@ export default function Home() {
 					/>
 				</div>
 				<div
-					className="lg:ml-[43%] ml-[24%]"
+					className="lg:ml-[43%] ml-[24%] md:ml-[34%]"
 					data-aos="fade-left"
 					data-aos-offset="300"
 					data-aos-easing="ease-in-sine"

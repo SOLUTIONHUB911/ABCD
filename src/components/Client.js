@@ -14,7 +14,7 @@ export default function Client() {
 				id="fname"
 				name="fullname"
 				placeholder="*Full Name"
-				className="bg-transparent border-[#ffd000] w-[100%] border p-4 h-[30px] mb-4 col-span-2 mt-4"
+				className="bg-transparent font-roboto border-[#ffd000] w-[100%] border p-4 h-[30px] mb-4 col-span-2 mt-4"
 				required="true"
 			/>
 			<input

@@ -1,4 +1,4 @@
-import { Discord } from '../components/icons';
+import { Discord, Twitter } from '../components/icons';
 import Navigation from '../components/Navigation';
 import CommunityHero from '/public/CommunityHero.jpg';
 import Image from 'next/image';
@@ -32,6 +32,15 @@ export default function Community() {
 						Join ABCD{' '}
 						<span className="ml-[10px]">
 							<Discord color="#ffd000" />
+						</span>
+					</button>
+					<button className="mt-16 flex border border-[#ffd000] py-2 px-5 text-[#ffd000] 
+	 font-bold text-base rounded h-[40px]">
+						Join ABCD{' '}
+						<span className="ml-[10px]">
+							<a href="https://twitter.com/abcd_community" target="_blank" rel="noreferrer noopener">
+								<Twitter color="#ffd000" />
+							</a>
 						</span>
 					</button>
 				</div>
