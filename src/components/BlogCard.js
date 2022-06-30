@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function BlogCard({ title, date, text }) {
 	return (
 		<div className="lg:w-1/2 bg-[#121212] mx-[25px] lg:mx-[50px] mt-[30px]">
-			<Image src={HeroBlog} className="object-fill" alt="Card top" />
+			<Image src={HeroBlog} className="object-cover" alt="Card top" />
 			<section className="mx-[25px]">
 				<p className="text-[#ffd000] mt-4 font-bold leading-10">{title}</p>
 				<p className="text-sm font-light leading-10 tracking-wide">{date}</p>
