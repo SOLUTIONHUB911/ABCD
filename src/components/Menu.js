@@ -7,7 +7,7 @@ export default function Menu({ onClick }) {
 	return (
 		<nav id="navigation" className={styles.sidenav}>
 			<main className="animate__animated animate__backInLeft">
-				<a href="javascript:void(0)" className={styles.closebtn} onClick={onClick}>
+				<a className={styles.closebtn} onClick={onClick}>
 					&times;
 				</a>
 				<ul>
