@@ -339,6 +339,10 @@ border-radius: var(--radius);
   .started{
     left: 25px;
   }
+   .containerTalent{
+    width: 40vh;
+
+}
 }
 @media only screen and (min-width: 769px){
   .containerTalent{
