@@ -5,17 +5,6 @@ module.exports = {
 			fontFamily: {
 				Roboto: [ 'Roboto', 'sans-serif' ]
 			}
-			// // that is animation class
-			// animation: {
-			// 	fade: 'fadeOut 15s ease-in-out'
-			// },
-			// // that is actual animation
-			// keyframes: {
-			// 	fadeOut: {
-			// 		'0%': { backgroundColor: '[#ffd000]' },
-			// 		'100%': { backgroundColor: 'transparent' }
-			// 	}
-			// }
 		}
 	},
 	plugins: []

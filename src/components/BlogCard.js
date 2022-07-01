@@ -1,10 +1,13 @@
 import styles from '/styles/Hero.module.css';
 import HeroBlog from '/public/HeroBlog.jpg';
-import Image from 'next/image';
+import NextImage from 'next/image';
 export default function BlogCard({ title, date, text }) {
 	return (
-		<div className="lg:w-1/2 bg-[#121212] mx-[25px] lg:mx-[50px] mt-[30px]">
-			<Image src={HeroBlog} className="object-cover" alt="Card top" />
+		<div className="md:mx-[50px] lg:w-full bg-[#121212] mx-[25px] mt-[30px] ">
+			<div className="block">
+				<NextImage src={HeroBlog} alt="Card top" width={538} height={320} layout="responsive" />
+			</div>
+
 			<section className="mx-[25px]">
 				<p className="text-[#ffd000] mt-4 font-bold leading-10">{title}</p>
 				<p className="text-sm font-light leading-10 tracking-wide">{date}</p>

@@ -34,7 +34,7 @@
   margin-top: -5px;
 }
 .sidenav {
-  height: 80%;
+  height: 65%;
   width: 40%;
   position: fixed;
   z-index: 1;
@@ -232,7 +232,7 @@ width: 720px;
 height: 500px;
 }
 
-@media only screen and (max-width: 400px) {
+@media (min-width: 640px) and (max-width: 767px) {
   /*NAVIGATION.JS */
 .menu, .change {
   display: inline-block;
