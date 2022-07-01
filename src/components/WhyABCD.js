@@ -14,7 +14,7 @@ export default function WhyABCD({ heading, item1, item2, item3, item4, item5 }) 
 			data-aos-easing="ease-in-sine"
 		>
 			<h3 className="font-semibold text-4xl text-[#ffd000]">{heading}</h3>
-			<ul className="list-disc list-inside text-sm leading-10">
+			<ul className="list-disc list-inside text-lg leading-10">
 				<li>{item1}</li>
 				<li>{item2}</li>
 				<li>{item3}</li>

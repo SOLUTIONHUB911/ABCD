@@ -6,10 +6,10 @@ export default function FAQ() {
 	return (
 		<div className="font-Roboto">
 			<Navigation />
-			<h2 className="w-[35%] font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
+			<h2 className="w-[100%] font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
 				FAQs
 			</h2>
-			<h2 className="w-[35%] font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
+			<h2 className="w-[100%] font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-16 mx-[25px] lg:mx-[50px]">
 				ABCD Talent Vetting & Quality
 			</h2>
 

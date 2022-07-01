@@ -3,7 +3,7 @@ import HeroBlog from '/public/HeroBlog.jpg';
 import NextImage from 'next/image';
 export default function BlogCard({ title, date, text }) {
 	return (
-		<div className="md:mx-[50px] lg:w-full bg-[#121212] mx-[25px] mt-[30px] ">
+		<div className="mx-[50px] lg:w-full bg-[#121212] mx-[25px] mt-[30px] ">
 			<div className="block">
 				<NextImage src={HeroBlog} alt="Card top" width={538} height={320} layout="responsive" />
 			</div>

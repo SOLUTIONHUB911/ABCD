@@ -6,8 +6,8 @@ import Subscribe from './Subscribe';
 export default function Footer() {
 	return (
 		<footer className="mx-[17px] lg:mx-[50px] mt-44 font-roboto">
-			<section className="grid-cols-4 grid gap-4">
-				<div className="w-full lg:col-span-2 col-span-4 font-bold text-2xl items-center">
+			<section className="grid-cols-6 grid gap-4">
+				<div className="w-full lg:col-span-2 col-span-6 font-bold text-2xl items-center">
 					<Link href="/">
 						<a>
 							<Image strategy="lazyOnload" src={ABCD} height={35} width={150} alt="ABCD" />
@@ -24,7 +24,7 @@ export default function Footer() {
 					<Subscribe />
 				</div>
 
-				<div className="lg:w-[50%] col-span-2">
+				<div className="col-span-2">
 					<h3 className="font-bold text-2xl items-center font-roboto">Learn More</h3>
 					<Link href="/About">
 						<a>
@@ -39,7 +39,7 @@ export default function Footer() {
 					<p className="text-sm font-normal font-roboto mt-[6px] hover:text-[#ffd000]">Hire Talent</p>
 				</div>
 
-				<div className="col-span-1">
+				<div className="col-span-2">
 					<h3 className="font-bold text-2xl items-center font-roboto">Get in Touch</h3>
 					<p className="text-sm font-normal mt-[16px] font-roboto">info@abcdevs.com</p>
 					<div className="grid grid-cols-6 gap-4 items-center -mx-[10px] mt-[16px]">
