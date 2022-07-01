@@ -7,11 +7,12 @@ import Joshua from '/public/JoshuaA.png';
 import Destiny from '/public/Destiny.png';
 import Otobong from '/public/Otobong.png';
 import Gwendal from '/public/Gwendal.png';
+import ABCDJourney from '/public/assets/ABCDJourney.svg';
+import AboutHero from '/public/assets/AboutHero.svg';
 import Footer from '../components/Footer';
 import Link from 'next/link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { ABCDJourney, AboutHero } from '../components/icons';
 import { useEffect } from 'react';
 export default function About() {
 	//useEffect
@@ -24,18 +25,18 @@ export default function About() {
 			<Navigation />
 			<main className="font-roboto">
 				<h3 className="lg:ml-[50px] ml-[25px] mt-20 text-[#ffd000] font-bold mb-4 text-4xl">About ABCD</h3>
-				<section className="grid-rows-2 grid lg:grid-cols-2 mx-[25px] lg:ml-[50px] gap-4">
+				<section className="grid grid-cols-2 mx-[25px] lg:ml-[50px] gap-4">
 					<figure
-						className="lg:order-last"
+						className="lg:order-last col-span-2"
 						data-aos="fade-down"
 						data-aos-easing="linear"
 						data-aos-duration="1500"
 					>
-						<AboutHero />
+						<Image src={AboutHero} alt="About Hero" width={388} height={290} layout="responsive" />
 					</figure>
 
-					<div>
-						<p className="text-sm leading-10">
+					<div className="col-span-2">
+						<p className="text-lg leading-10">
 							African Blockchain Centre for Developers is focused on providing a full suite of solutions
 							to help organizations build on different blockchains/Layer 2 technologies by providing
 							talent and quality assurance. This includes web3 product managers, web3 product designers,
@@ -47,7 +48,7 @@ export default function About() {
 						<Link href="/FAQ">
 							<a>
 								<button
-									className="mt-12 bg-[#FFD000] text-black font-bold text-base
+									className="mt-12 bg-[#FFD000] text-black font-roboto font-semiBold text-base
 								 rounded w-[81px] h-[40px]
 								 hover:text-white hover:bg-black hover:border hover:border-[#ffd000] hover:shadow-lg"
 									id={styles.btneffect}
@@ -60,18 +61,18 @@ export default function About() {
 				</section>
 
 				{/**ABCD JOURNEY */}
-				<section className="lg:grid lg:grid-cols-2 mx-[25px] lg:mr-[50px] gap-4 -mt-[570px]">
+				<section className="grid grid-cols-2 mx-[25px] lg:mr-[50px] gap-4 lg:-mt-[570px] -mt-[20px] ">
 					<figure
-						className="lg:mt-12"
+						className="lg:mt-12 col-span-2"
 						data-aos="fade-up"
 						data-aos-offset="300"
 						data-aos-easing="ease-in-sine"
 					>
-						<ABCDJourney />
+						<Image src={ABCDJourney} alt="ABCD Journey" width={389} height={292} layout="responsive" />
 					</figure>
-					<div>
+					<div className="col-span-2">
 						<h3 className="text-[#ffd000] font-bold mb-4 text-4xl">ABCD Journey</h3>
-						<p className="text-sm leading-10">
+						<p className="text-lg leading-10">
 							In 2020, ABCD began as a project focused on training blockchain developers in Africa who
 							contribute to solving problems on the continent. Most importantly, fulfilling the demand for
 							web3 developers in the global market. As our community opened up, for sustainable
@@ -83,7 +84,7 @@ export default function About() {
 
 				{/**Why ABCD */}
 				<h3 className="mx-[25px] lg:mx-[74px] mt-20 text-[#ffd000] font-bold mb-4 text-4xl">Why ABCD?</h3>
-				<section className="grid lg:grid-flow-row lg:grid-cols-2 mx-[25px] lg:mx-[74px] gap-4 ">
+				<section className="grid lg:grid-cols-2 mx-[25px] lg:mx-[74px] gap-4 ">
 					<WhyABCD
 						heading="Work with Us"
 						item1="Improved quality assurance & trust for your project/business"
@@ -109,8 +110,8 @@ export default function About() {
 					data-aos-easing="ease-in-sine"
 				>
 					<h3 className="font-semibold text-4xl text-[#ffd000]">The Alpha Mission</h3>
-					<p className="text-sm mt-4">Building an ecosystem that supports development by:</p>
-					<ul className="list-decimal list-inside text-sm leading-10">
+					<p className="text-lg mt-4">Building an ecosystem that supports development by:</p>
+					<ul className="list-decimal list-inside text-lg leading-10">
 						<li>Connecting businesses with top talents across the continent.</li>
 						<li>Fostering the adoption of web3 driven infrastructure across the continent.</li>
 						<li>Building a thriving community that supports web2/web3 education, networking,</li>

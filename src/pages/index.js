@@ -46,7 +46,7 @@ export default function Home() {
 			<Navigation />
 			<main className="font-roboto">
 				<section className="lg:w-[974px] h-[400px] lg:h-[500px] lg:mt-[120px] lg:top-[0] relative top-[370px] bg-[#ffd000]">
-					<h1 className="mx-[25px] lg:mx-[50px] text-black font-bold font-roboto w-full text-4xl lg:w-[80%] lg:text-6xl lg:w-[550px] relative top-[87px]">
+					<h1 className="mx-[25px] lg:mx-[50px] text-black font-bold font-roboto w-full text-4xl lg:text-6xl lg:w-[550px] relative top-[87px]">
 						Hire/Get Access to ABCD vetted:
 					</h1>
 					<p className="mx-[25px] relative lg:mx-[50px] font-roboto top-[93px] text-[28px] lg:text-[40px] font-bold">
@@ -95,7 +95,7 @@ export default function Home() {
 					<div className="w-full" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
 						<Image src={WhatWeDo} width={786} height={589} layout="responsive" alt="What we Do image" />
 					</div>
-					<aside className="w-[95%] mx-[20px] text-lg">
+					<aside className="w-[95%] mx-[20px] text-lg mt-4">
 						<h2 className="font-semibold text-[50px] text-[#ffd000] font-roboto">What We Do?</h2>
 						<p className="lg:w-[80%] leading-10 font-roboto text-lg">
 							African Blockchain Centre for developers is a development and talent management company
@@ -135,7 +135,7 @@ export default function Home() {
 					Trained and seasoned Blockchain Developers.
 				</p>
 				<div
-					className="lg:ml-[53%] ml-[33%]"
+					className="md:ml-[53%] ml-[33%]"
 					data-aos="fade-right"
 					data-aos-offset="300"
 					data-aos-easing="ease-in-sine"
@@ -167,7 +167,7 @@ export default function Home() {
 					/>
 				</div>
 				<div
-					className="lg:ml-[32%] ml-[8%]"
+					className="md:ml-[32%] ml-[8%]"
 					data-aos="fade-right"
 					data-aos-offset="300"
 					data-aos-easing="ease-in-sine"

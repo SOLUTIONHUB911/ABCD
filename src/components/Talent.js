@@ -7,7 +7,8 @@ export default function Talent() {
 		AOS.refresh();
 	}, []);
 	return (
-		<form className="grid grid-cols-2 gap-4 w-[500px] mx-[25px]" data-aos="flip-right">
+		<form className="grid grid-cols-2 gap-4 w-[50%] lg:w-[500px] mx-[25px]" data-aos="flip-right">
+			<p className="font-roboto text-lg col-span-2">Are you competent in your field of study?. Join our pool.</p>
 			<input
 				type="text"
 				id="fname"
