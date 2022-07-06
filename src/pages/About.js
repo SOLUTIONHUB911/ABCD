@@ -25,7 +25,7 @@ export default function About() {
 			<Navigation />
 			<main className="font-roboto">
 				<h3 className="lg:ml-[50px] ml-[25px] mt-20 text-[#ffd000] font-bold mb-4 text-4xl">About ABCD</h3>
-				<section className="grid grid-cols-2 mx-[25px] lg:ml-[50px] gap-4">
+				<section className="grid grid-cols-2 lg:grid-cols-4 mx-[25px] lg:ml-[50px] gap-4">
 					<figure
 						className="lg:order-last col-span-2"
 						data-aos="fade-down"
@@ -61,9 +61,9 @@ export default function About() {
 				</section>
 
 				{/**ABCD JOURNEY */}
-				<section className="grid grid-cols-2 mx-[25px] lg:mr-[50px] gap-4 lg:-mt-[570px] -mt-[20px] ">
+				<section className="grid grid-cols-2 lg:grid-cols-4 mx-[25px] lg:mr-[50px] gap-4 lg:mt-[270px] -mt-[20px] ">
 					<figure
-						className="lg:mt-12 col-span-2"
+						className="col-span-2"
 						data-aos="fade-up"
 						data-aos-offset="300"
 						data-aos-easing="ease-in-sine"
