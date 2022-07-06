@@ -20,8 +20,8 @@ export default function Community() {
 			<h2 className="font-bold text-[30px] lg:text-[50px] text-[#ffd000] mt-20 mx-[25px] lg:mx-[50px]">
 				ABCD Community
 			</h2>
-			<main className=" grid-cols-4 grid gap-4 mb-12 lg:h-[500px]">
-				<div className="mx-[25px] lg:mx-[50px] mt-[300px] lg:mt-0 col-span-4 lg:col-span-2 order-last">
+			<main className=" grid-cols-4 grid gap-4 lg:grid-cols-none mb-12 lg:h-[500px]">
+				<div className="mx-[25px] lg:mx-[50px] lg:w-[40%] mt-[300px] lg:mt-0 col-span-4 order-last">
 					<p className="leading-10 tracking-wide text-base text-justify">
 						Join the world’s most influential workforce in web3 product managers, web3 product designers,
 						smart contract engineers, smart contract security audits, smart contracts testing etc. Connect
@@ -44,7 +44,7 @@ export default function Community() {
 						</span>
 					</button>
 				</div>
-				<article className="absolute lg:left-[50%] left-[10%] w-full mb-[160px] col-span-4 lg:col-span-2">
+				<article className="absolute lg:left-[50%] left-[10%] lg:w-[50%] w-full mb-[160px] col-span-4">
 					<div className={styles.community}>
 						<Image
 							src={CommunityHero}
