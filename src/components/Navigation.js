@@ -70,7 +70,7 @@ export default function Navigation() {
 						id={styles.btneffect}
 						onClick={onclick}
 					>
-						Join ABCD
+						Get vetted
 					</button>
 				</a>
 			</nav>
