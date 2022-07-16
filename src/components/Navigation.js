@@ -77,19 +77,9 @@ export default function Navigation() {
 			{Form && (
 				<Register onChange={onClose} className="relative top-[400px]">
 					<div className="mx-auto mt-12">
-						<a
-							className={
-								router.pathname == '/src/components/Talent.js' ? (
-									'bg-[#ffd000] && text-black'
-								) : (
-									'bg-black && text-[#ffd000]'
-								)
-							}
-						>
-							<button className=" hover:bg-[#ffd000] text-center font-Roboto hover:text-black ml-[25px] text-[#ffd000] border border-[#ffd000] w-[91%] mr-[25px] p-[8px]">
-								Talent
-							</button>
-						</a>
+						<button className=" hover:bg-[#ffd000] text-center font-Roboto hover:text-black ml-[25px] text-[#ffd000] border border-[#ffd000] w-[91%] mr-[25px] p-[8px]">
+							Talent
+						</button>
 					</div>
 					<Talent />
 				</Register>

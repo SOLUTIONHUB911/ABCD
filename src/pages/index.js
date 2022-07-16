@@ -22,8 +22,7 @@ import { useEffect, useState } from 'react';
 import Register from './Register';
 import Client from '../components/Client';
 import { useRouter } from 'next/router';
-import Media from 'react-media';
-import RegisterMobile from './RegisterMobile';
+import ClientMobile from './ClientMobile';
 import Link from 'next/link';
 
 export default function Home() {
@@ -59,9 +58,18 @@ export default function Home() {
 					<p className="mx-[25px] lg:font-normal font-bold font-roboto lg:mx-[50px] relative top-[82px] text-black text-[38px]">
 						for your project
 					</p>
-					<button className={styles.started} id={styles.btneffect} onClick={onClick}>
-						Get Started
-					</button>
+					<div className="hidden lg:block">
+						<button className={styles.started} id={styles.btneffect} onClick={onClick}>
+							Get Started
+						</button>
+					</div>
+					<Link href="/ClientMobile">
+						<a className="lg:hidden relative right-[25px]">
+							<button className={styles.started} id={styles.btneffect} onClick={onClick}>
+								Get Started
+							</button>
+						</a>
+					</Link>
 					{Form && (
 						<Register onChange={onClose}>
 							<div className="mx-auto mt-12">

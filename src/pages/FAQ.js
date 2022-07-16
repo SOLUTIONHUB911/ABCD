@@ -15,17 +15,19 @@ export default function FAQ() {
 
 			<div className={styles.preferences}>
 				<Collapsible title="DATA COLLECTION" defaultExpanded="true">
-					<div>
+					<div className="text-lg">
 						<p>Here we collect data from the devs to understand their background and strength.</p>
 					</div>
 				</Collapsible>
 				<Collapsible title="FIRST INTERVIEW" defaultExpanded="false">
 					<div>
-						<p className="mb-0">To get to know the candidate and understand their experience level.</p>
+						<p className="mb-0 text-lg">
+							To get to know the candidate and understand their experience level.
+						</p>
 					</div>
 				</Collapsible>
 				<Collapsible title="TECHNICAL INTERVIEW" defaultExpanded="false">
-					<div>
+					<div className="text-lg">
 						<p>At his stage, the developers take 3 tests:</p>
 						<ul className="list-disc list-inside mx-[25px]">
 							<li>
@@ -45,7 +47,7 @@ export default function FAQ() {
 					</div>
 				</Collapsible>
 				<Collapsible title="FINAL STAGE & COMPLETE PROFILING" defaultExpanded="false">
-					<div>
+					<div className="text-lg">
 						<p>
 							Every process and interview leading to this is carefully documented to help us carefully
 							create important details and a profile about the developer. This includes:

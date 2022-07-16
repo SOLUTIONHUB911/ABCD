@@ -22,7 +22,7 @@ export default function Register({ onChange, children, className }) {
 					{children}
 					<button
 						type="submit"
-						className="h-full p-[10px] block bg-[#FFD000] ml-[25px] w-full lg:w-[500px] text-black mt-4 text-center text-lg font-semibold"
+						className="h-full p-[10px] block bg-[#FFD000] ml-[25px] lg:w-[500px] text-black mt-4 text-center text-lg font-semibold"
 						id={styles.btneffect}
 					>
 						Submit

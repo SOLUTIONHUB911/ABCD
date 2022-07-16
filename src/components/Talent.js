@@ -7,15 +7,17 @@ export default function Talent() {
 		AOS.refresh();
 	}, []);
 	return (
-		<form className="grid grid-cols-2 gap-4 w-[50%] lg:w-[500px] mx-[25px]" data-aos="flip-right">
-			<p className="font-roboto text-lg col-span-2">Are you competent in your field of study?. Join our pool.</p>
+		<form className="grid grid-cols-2 gap-4 w-full lg:w-[500px] lg:mx-[25px]" data-aos="flip-right">
+			<p className="font-roboto text-lg col-span-2 mt-4">
+				Are you competent in your field of study?. Join our pool.
+			</p>
 			<input
 				type="text"
 				id="fname"
 				name="firstname"
 				placeholder="*First Name"
 				className="bg-transparent border-[#ffd000] w-[100%] border p-4 h-[30px] mb-4 mt-4"
-				required="true"
+				required={true}
 			/>
 			<input
 				type="text"
@@ -23,7 +25,7 @@ export default function Talent() {
 				name="lastname"
 				placeholder="*Last Name"
 				className="bg-transparent border-[#ffd000] w-full border p-4 h-[30px] mb-4 mt-4"
-				required="true"
+				required={true}
 			/>
 			<input
 				type="text"
@@ -31,7 +33,7 @@ export default function Talent() {
 				name="email"
 				placeholder="*Email"
 				className="bg-transparent border-[#ffd000] w-full border p-4 h-[30px] mb-4"
-				required="true"
+				required={true}
 			/>
 			<input
 				type="text"
@@ -39,7 +41,7 @@ export default function Talent() {
 				name="phone"
 				placeholder="*Phone"
 				className="bg-transparent border-[#ffd000] w-full border p-4 h-[30px] mb-4"
-				required="true"
+				required={true}
 			/>
 			<input
 				type="text"
@@ -47,7 +49,7 @@ export default function Talent() {
 				name="skills"
 				placeholder="*Skills"
 				className="bg-transparent border-[#ffd000] w-full border p-4 h-[30px] mb-4"
-				required="true"
+				required={true}
 			/>
 
 			<input
@@ -56,14 +58,14 @@ export default function Talent() {
 				name="level"
 				placeholder="*Level"
 				className="bg-transparent border-[#ffd000] w-full border p-4 h-[30px] mb-4"
-				required="true"
+				required={true}
 			/>
 			<textarea
 				id="subject"
 				name="subject"
 				placeholder="*About yourself"
 				className="bg-transparent border-[#ffd000] col-span-2 border p-4 h-[150px]"
-				required="true"
+				required={true}
 			/>
 		</form>
 	);
